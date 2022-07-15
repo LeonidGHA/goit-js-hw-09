@@ -16,7 +16,7 @@ function handleSubmit(event) {
 
   let newDelay = delayValueEl;
 
-  for (i = 1; i <= amountValueEl; i += 1) {
+  for (let i = 1; i <= amountValueEl; i += 1) {
     createPromise(i, newDelay)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(

@@ -47,6 +47,9 @@ const timer = {
     this.intervalId = setInterval(() => {
       const dateTimerNow = Date.now();
       const difference = timerDeadline - dateTimerNow;
+      if (difference <= 0) {
+        stop();
+      }
       const { days, hours, minutes, seconds } = this.convertMs(difference);
       daysEl.textContent = this.pad(days);
       hoursEl.textContent = this.pad(hours);
