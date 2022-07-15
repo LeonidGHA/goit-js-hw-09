@@ -44,3 +44,38 @@ img {
   padding-top: 5px;
   font-size: 16px;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: center;
+}
+
+.form-label {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.form-input {
+  margin-top: 10px;
+  border-color: #00bf96;
+  outline-style: none;
+}
+.form-input:focus,
+.form-input:hover {
+  border-color: red;
+}
+.form-btn {
+  width: 200px;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #00bf96;
+  border-radius: 8px;
+  border-style: none;
+}
+
+.form-btn:focus,
+.form-bth:hover {
+  background-color: royalblue;
+  outline-style: none;
+}
